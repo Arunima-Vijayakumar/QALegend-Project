@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Suite">
+<listeners>
+<listener class-name= "TestScripts.Listeners">   <!--//class-name, and not just name -->
+
+</listener>
+</listeners>
+  <test thread-count="5" name="Test">
+  <parameter name="Browser" value="Edge"></parameter>
+    <classes>
+      <class name="TestScripts.QALegendInvoicesTest"> 
+     
+      <methods>
+ <!--  <include name= "addClient"></include>-->
+<!-- <include name= "addANewProject"></include>-->
+      <include name= "addANewPayment"></include>
+      <!-- <include name= "searchProject"></include>-->
+      </methods>
+      
+      </class>
+ 
+<!--      <class name="TestScripts.QALegendUserTest"/>-->
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
