@@ -7,13 +7,13 @@
   <test thread-count="5" name="Test(failed)">
     <parameter name="Browser" value="Edge"/>
     <classes>
-      <class name="TestScripts.QALegendInvoicesTest">
+      <class name="TestScripts.QALegendProjectsTest">
         <methods>
           <include name="initialisation"/>
-          <include name="addANewPayment"/>
           <include name="afterMethod"/>
+          <include name="editAProject"/>
         </methods>
-      </class> <!-- TestScripts.QALegendInvoicesTest -->
+      </class> <!-- TestScripts.QALegendProjectsTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

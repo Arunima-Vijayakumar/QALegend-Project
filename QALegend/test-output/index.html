@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>C:\Users\Ammu\eclipse-workspace\QALegend\testng.xml</span>
+                    <span>C:\Users\Ammu\git\QALegend\QALegend\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -103,7 +103,7 @@
                     <div class="method-list-content failed suite-Suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="TestScripts.QALegendInvoicesTest" class="method navigator-link" hash-for-method="addANewPayment">addANewPayment</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="TestScripts.QALegendProjectsTest" class="method navigator-link" hash-for-method="editAProject">editAProject</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
@@ -117,22 +117,22 @@
                     <div class="method-list-content skipped suite-Suite">
                       <span>
                         <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="TestScripts.QALegendInvoicesTest" class="method navigator-link" hash-for-method="addANewPayment">addANewPayment</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="TestScripts.QALegendProjectsTest" class="method navigator-link" hash-for-method="editAProject">editAProject</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="TestScripts.QALegendInvoicesTest" class="method navigator-link" hash-for-method="addANewPayment">addANewPayment</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="TestScripts.QALegendProjectsTest" class="method navigator-link" hash-for-method="editAProject">editAProject</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="TestScripts.QALegendInvoicesTest" class="method navigator-link" hash-for-method="addANewPayment">addANewPayment</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="TestScripts.QALegendProjectsTest" class="method navigator-link" hash-for-method="editAProject">editAProject</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="TestScripts.QALegendInvoicesTest" class="method navigator-link" hash-for-method="addANewPayment">addANewPayment</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="TestScripts.QALegendProjectsTest" class="method navigator-link" hash-for-method="editAProject">editAProject</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content skipped suite-Suite -->
@@ -150,30 +150,23 @@
           <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">TestScripts.QALegendInvoicesTest</span>
+              <span class="class-name">TestScripts.QALegendProjectsTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="addANewPayment">
-                  </a> <!-- addANewPayment -->
-                  <span class="method-name">addANewPayment</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //td[@class=&apos;today active day&apos;]&apos; (tried for 50 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at Utilities.WaitUtility.waitForElementToBeVisible(WaitUtility.java:26)
-	at PageClasses.QALegendInvoicesPage.addPayment(QALegendInvoicesPage.java:76)
-	at TestScripts.QALegendInvoicesTest.addANewPayment(QALegendInvoicesTest.java:13)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//td[@class=&apos;today active day&apos;]&quot;}
+                  <a name="editAProject">
+                  </a> <!-- editAProject -->
+                  <span class="method-name">editAProject</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#title&quot;}
   (Session info: MicrosoftEdge=138.0.3351.65)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.32.0&apos;, revision: &apos;d17c8aa950&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
 Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [74e304a17897bb3e2a23880ecde92859, findElement {using=xpath, value=//td[@class=&apos;today active day&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 138.0.3351.65, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:64582}, msedge: {msedgedriverVersion: 138.0.3351.65 (81e3782c3ab4..., userDataDir: C:\Users\Ammu\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64582/devtoo..., se:cdpVersion: 138.0.3351.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 74e304a17897bb3e2a23880ecde92859
+Command: [0c1b451d5ef68e772d9e6d8aaed955c4, findElement {value=title, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 138.0.3351.65, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:52881}, msedge: {msedgedriverVersion: 138.0.3351.65 (81e3782c3ab4..., userDataDir: C:\Users\Ammu\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52881/devtoo..., se:cdpVersion: 138.0.3351.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0c1b451d5ef68e772d9e6d8aaed955c4
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -187,13 +180,12 @@ Session ID: 74e304a17897bb3e2a23880ecde92859
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy15.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-	... 31 more
-... Removed 31 stack frames
+	at jdk.proxy2/jdk.proxy2.$Proxy15.sendKeys(Unknown Source)
+	at Utilities.PageUtilities.enterText(PageUtilities.java:17)
+	at PageClasses.QALegendProjectPage.editProject(QALegendProjectPage.java:94)
+	at TestScripts.QALegendProjectsTest.editAProject(QALegendProjectsTest.java:21)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -202,30 +194,23 @@ Session ID: 74e304a17897bb3e2a23880ecde92859
           <div class="suite-Suite-class-skipped">
             <div class="main-panel-header rounded-window-top">
               <img src="skipped.png"/>
-              <span class="class-name">TestScripts.QALegendInvoicesTest</span>
+              <span class="class-name">TestScripts.QALegendProjectsTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="addANewPayment">
-                  </a> <!-- addANewPayment -->
-                  <span class="method-name">addANewPayment</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //td[@class=&apos;today active day&apos;]&apos; (tried for 50 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at Utilities.WaitUtility.waitForElementToBeVisible(WaitUtility.java:26)
-	at PageClasses.QALegendInvoicesPage.addPayment(QALegendInvoicesPage.java:76)
-	at TestScripts.QALegendInvoicesTest.addANewPayment(QALegendInvoicesTest.java:13)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//td[@class=&apos;today active day&apos;]&quot;}
+                  <a name="editAProject">
+                  </a> <!-- editAProject -->
+                  <span class="method-name">editAProject</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#title&quot;}
   (Session info: MicrosoftEdge=138.0.3351.65)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.32.0&apos;, revision: &apos;d17c8aa950&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
 Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [e45308a7e44d82b7832f0a6917dfd91d, findElement {using=xpath, value=//td[@class=&apos;today active day&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 138.0.3351.65, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:64295}, msedge: {msedgedriverVersion: 138.0.3351.65 (81e3782c3ab4..., userDataDir: C:\Users\Ammu\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64295/devtoo..., se:cdpVersion: 138.0.3351.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: e45308a7e44d82b7832f0a6917dfd91d
+Command: [dad1914da98a55ff813baf190e3562d1, findElement {value=title, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 138.0.3351.65, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:52738}, msedge: {msedgedriverVersion: 138.0.3351.65 (81e3782c3ab4..., userDataDir: C:\Users\Ammu\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52738/devtoo..., se:cdpVersion: 138.0.3351.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: dad1914da98a55ff813baf190e3562d1
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -239,37 +224,29 @@ Session ID: e45308a7e44d82b7832f0a6917dfd91d
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy15.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-	... 31 more
-... Removed 32 stack frames
+	at jdk.proxy2/jdk.proxy2.$Proxy15.sendKeys(Unknown Source)
+	at Utilities.PageUtilities.enterText(PageUtilities.java:17)
+	at PageClasses.QALegendProjectPage.editProject(QALegendProjectPage.java:94)
+	at TestScripts.QALegendProjectsTest.editAProject(QALegendProjectsTest.java:21)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="addANewPayment">
-                  </a> <!-- addANewPayment -->
-                  <span class="method-name">addANewPayment</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //td[@class=&apos;today active day&apos;]&apos; (tried for 50 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at Utilities.WaitUtility.waitForElementToBeVisible(WaitUtility.java:26)
-	at PageClasses.QALegendInvoicesPage.addPayment(QALegendInvoicesPage.java:76)
-	at TestScripts.QALegendInvoicesTest.addANewPayment(QALegendInvoicesTest.java:13)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//td[@class=&apos;today active day&apos;]&quot;}
+                  <a name="editAProject">
+                  </a> <!-- editAProject -->
+                  <span class="method-name">editAProject</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#title&quot;}
   (Session info: MicrosoftEdge=138.0.3351.65)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.32.0&apos;, revision: &apos;d17c8aa950&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
 Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [326052c945823318f1adf4b93b5c0e61, findElement {using=xpath, value=//td[@class=&apos;today active day&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 138.0.3351.65, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:64371}, msedge: {msedgedriverVersion: 138.0.3351.65 (81e3782c3ab4..., userDataDir: C:\Users\Ammu\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64371/devtoo..., se:cdpVersion: 138.0.3351.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 326052c945823318f1adf4b93b5c0e61
+Command: [dd263957e3c0948fca27e3805ad58ef8, findElement {value=title, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 138.0.3351.65, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:52817}, msedge: {msedgedriverVersion: 138.0.3351.65 (81e3782c3ab4..., userDataDir: C:\Users\Ammu\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52817/devtoo..., se:cdpVersion: 138.0.3351.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: dd263957e3c0948fca27e3805ad58ef8
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -283,30 +260,29 @@ Session ID: 326052c945823318f1adf4b93b5c0e61
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy15.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-	... 31 more
-... Removed 31 stack frames
+	at jdk.proxy2/jdk.proxy2.$Proxy15.sendKeys(Unknown Source)
+	at Utilities.PageUtilities.enterText(PageUtilities.java:17)
+	at PageClasses.QALegendProjectPage.editProject(QALegendProjectPage.java:94)
+	at TestScripts.QALegendProjectsTest.editAProject(QALegendProjectsTest.java:21)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="addANewPayment">
-                  </a> <!-- addANewPayment -->
-                  <span class="method-name">addANewPayment</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchSessionException: invalid session id: session deleted as the browser has closed the connection
-from disconnected: not connected to DevTools
+                  <a name="editAProject">
+                  </a> <!-- editAProject -->
+                  <span class="method-name">editAProject</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#title&quot;}
   (Session info: MicrosoftEdge=138.0.3351.65)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.32.0&apos;, revision: &apos;d17c8aa950&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
 Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [a666a08bef2631cd9ff271ea1b2881f4, findElement {using=xpath, value=//td[@class=&apos;today active day&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 138.0.3351.65, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:64434}, msedge: {msedgedriverVersion: 138.0.3351.65 (81e3782c3ab4..., userDataDir: C:\Users\Ammu\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64434/devtoo..., se:cdpVersion: 138.0.3351.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: a666a08bef2631cd9ff271ea1b2881f4
+Command: [495600f6948fa6ff73eb0a69b575ab50, findElement {value=title, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 138.0.3351.65, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:52848}, msedge: {msedgedriverVersion: 138.0.3351.65 (81e3782c3ab4..., userDataDir: C:\Users\Ammu\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52848/devtoo..., se:cdpVersion: 138.0.3351.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 495600f6948fa6ff73eb0a69b575ab50
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -320,88 +296,48 @@ Session ID: a666a08bef2631cd9ff271ea1b2881f4
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy15.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-	at Utilities.WaitUtility.waitForElementToBeVisible(WaitUtility.java:26)
-	at PageClasses.QALegendInvoicesPage.addPayment(QALegendInvoicesPage.java:76)
-	at TestScripts.QALegendInvoicesTest.addANewPayment(QALegendInvoicesTest.java:13)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames
+	at jdk.proxy2/jdk.proxy2.$Proxy15.sendKeys(Unknown Source)
+	at Utilities.PageUtilities.enterText(PageUtilities.java:17)
+	at PageClasses.QALegendProjectPage.editProject(QALegendProjectPage.java:94)
+	at TestScripts.QALegendProjectsTest.editAProject(QALegendProjectsTest.java:21)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="addANewPayment">
-                  </a> <!-- addANewPayment -->
-                  <span class="method-name">addANewPayment</span>
-                  <div class="stack-trace">org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+                  <a name="editAProject">
+                  </a> <!-- editAProject -->
+                  <span class="method-name">editAProject</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#title&quot;}
+  (Session info: MicrosoftEdge=138.0.3351.65)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.32.0&apos;, revision: &apos;d17c8aa950&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
 Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [f12b96b53076c7898a941ec06b741b41, findElement [using, value]]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 138.0.3351.65, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:64532}, msedge: {msedgedriverVersion: 138.0.3351.65 (81e3782c3ab4..., userDataDir: C:\Users\Ammu\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64532/devtoo..., se:cdpVersion: 138.0.3351.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: f12b96b53076c7898a941ec06b741b41
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:572)
+Command: [451caa6e6312c9d7215b7403b3ec31d0, findElement {value=title, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 138.0.3351.65, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:52778}, msedge: {msedgedriverVersion: 138.0.3351.65 (81e3782c3ab4..., userDataDir: C:\Users\Ammu\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52778/devtoo..., se:cdpVersion: 138.0.3351.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 451caa6e6312c9d7215b7403b3ec31d0
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
 	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
 	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy15.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-	at Utilities.WaitUtility.waitForElementToBeVisible(WaitUtility.java:26)
-	at PageClasses.QALegendInvoicesPage.addPayment(QALegendInvoicesPage.java:76)
-	at TestScripts.QALegendInvoicesTest.addANewPayment(QALegendInvoicesTest.java:13)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-Caused by: java.io.UncheckedIOException: java.io.IOException: HTTP/1.1 header parser received no bytes
-	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:500)
-	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
-	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.lambda$executeAsync$2(JdkHttpClient.java:387)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-Caused by: java.io.IOException: HTTP/1.1 header parser received no bytes
-	at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:589)
-	at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:123)
-	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:459)
-	... 8 more
-Caused by: java.io.IOException: HTTP/1.1 header parser received no bytes
-	at java.net.http/jdk.internal.net.http.common.Utils.wrapWithExtraDetail(Utils.java:348)
-	at java.net.http/jdk.internal.net.http.Http1Response$HeadersReader.onReadError(Http1Response.java:675)
-	at java.net.http/jdk.internal.net.http.Http1AsyncReceiver.checkForErrors(Http1AsyncReceiver.java:302)
-	at java.net.http/jdk.internal.net.http.Http1AsyncReceiver.flush(Http1AsyncReceiver.java:268)
-	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$LockingRestartableTask.run(SequentialScheduler.java:205)
-	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$CompleteRestartableTask.run(SequentialScheduler.java:149)
-	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:230)
-	... 3 more
-Caused by: java.net.SocketException: Connection reset
-	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
-	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
-	at java.net.http/jdk.internal.net.http.SocketTube.readAvailable(SocketTube.java:1170)
-	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.read(SocketTube.java:833)
-	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowTask.run(SocketTube.java:181)
-	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:230)
-	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:303)
-	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:256)
-	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.signalReadable(SocketTube.java:774)
-	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$ReadEvent.signalEvent(SocketTube.java:957)
-	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowEvent.handle(SocketTube.java:253)
-	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.handleEvent(HttpClientImpl.java:982)
-	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.lambda$run$3(HttpClientImpl.java:937)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.run(HttpClientImpl.java:937)
-... Removed 27 stack frames
+	at jdk.proxy2/jdk.proxy2.$Proxy15.sendKeys(Unknown Source)
+	at Utilities.PageUtilities.enterText(PageUtilities.java:17)
+	at PageClasses.QALegendProjectPage.editProject(QALegendProjectPage.java:94)
+	at TestScripts.QALegendProjectsTest.editAProject(QALegendProjectsTest.java:21)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -410,7 +346,7 @@ Caused by: java.net.SocketException: Connection reset
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Ammu\eclipse-workspace\QALegend\testng.xml</span>
+            <span class="header-content">C:\Users\Ammu\git\QALegend\QALegend\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -423,11 +359,11 @@ Caused by: java.net.SocketException: Connection reset
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;parameter name=&quot;Browser&quot; value=&quot;Edge&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;TestScripts.QALegendInvoicesTest&quot;&gt;
+      &lt;class name=&quot;TestScripts.QALegendProjectsTest&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;addANewPayment&quot;/&gt;
+          &lt;include name=&quot;editAProject&quot;/&gt;
         &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- TestScripts.QALegendInvoicesTest --&gt;
+      &lt;/class&gt; &lt;!-- TestScripts.QALegendProjectsTest --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -469,30 +405,30 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(5);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'addANewPayment')
-data.setCell(0, 2, 'TestScripts.QALegendInvoicesTest')
-data.setCell(0, 3, 1263998);
+data.setCell(0, 1, 'editAProject')
+data.setCell(0, 2, 'TestScripts.QALegendProjectsTest')
+data.setCell(0, 3, 5902);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'addANewPayment')
-data.setCell(1, 2, 'TestScripts.QALegendInvoicesTest')
-data.setCell(1, 3, 61616);
+data.setCell(1, 1, 'editAProject')
+data.setCell(1, 2, 'TestScripts.QALegendProjectsTest')
+data.setCell(1, 3, 5897);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'addANewPayment')
-data.setCell(2, 2, 'TestScripts.QALegendInvoicesTest')
-data.setCell(2, 3, 60932);
+data.setCell(2, 1, 'editAProject')
+data.setCell(2, 2, 'TestScripts.QALegendProjectsTest')
+data.setCell(2, 3, 5889);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'addANewPayment')
-data.setCell(3, 2, 'TestScripts.QALegendInvoicesTest')
-data.setCell(3, 3, 60807);
+data.setCell(3, 1, 'editAProject')
+data.setCell(3, 2, 'TestScripts.QALegendProjectsTest')
+data.setCell(3, 3, 5844);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'addANewPayment')
-data.setCell(4, 2, 'TestScripts.QALegendInvoicesTest')
-data.setCell(4, 3, 12184);
+data.setCell(4, 1, 'editAProject')
+data.setCell(4, 2, 'TestScripts.QALegendProjectsTest')
+data.setCell(4, 3, 5324);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 24 minutes</span>
+              <span class="suite-total-time">Total running time: 28 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -507,15 +443,17 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">2 ignored methods</span>
+            <span class="header-content">3 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">TestScripts.QALegendInvoicesTest</span>
+              <span class="ignored-class-name">TestScripts.QALegendProjectsTest</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">addanewInvoice</span>
+                <span class="ignored-method-name">deleteAProject</span>
                 <br/>
-                <span class="ignored-method-name">deleteanInvoice</span>
+                <span class="ignored-method-name">searchAProject</span>
+                <br/>
+                <span class="ignored-method-name">addANewProject</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -527,68 +465,68 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">TestScripts.QALegendInvoicesTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">TestScripts.QALegendProjectsTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">initialisation(Edge)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">addANewPayment</span>
-                <span class="method-start">7502 ms</span>
+                <span class="method-name">editAProject</span>
+                <span class="method-start">5147 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">afterMethod([TestResult name=addANewPayment status=SKIP method=QALegendInvoicesTest.addANewPayment()[pri:0, inst...)</span>
-                <span class="method-start">68463 ms</span>
+                <span class="method-name">afterMethod([TestResult name=editAProject status=SKIP method=QALegendProjectsTest.editAProject()[pri:0, instance...)</span>
+                <span class="method-start">11073 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">initialisation(Edge)</span>
-                <span class="method-start">68467 ms</span>
+                <span class="method-start">11080 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">addANewPayment</span>
-                <span class="method-start">73262 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">afterMethod([TestResult name=addANewPayment status=SKIP method=QALegendInvoicesTest.addANewPayment()[pri:0, inst...)</span>
-                <span class="method-start">134884 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">initialisation(Edge)</span>
-                <span class="method-start">134886 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">addANewPayment</span>
-                <span class="method-start">138816 ms</span>
+                <span class="method-name">editAProject</span>
+                <span class="method-start">14979 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">initialisation(Edge)</span>
-                <span class="method-start">1402814 ms</span>
+                <span class="method-start">20833 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method after">
-                <span class="method-name">afterMethod([TestResult name=addANewPayment status=SKIP method=QALegendInvoicesTest.addANewPayment()[pri:0, inst...)</span>
-                <span class="method-start">1402814 ms</span>
+                <span class="method-name">afterMethod([TestResult name=editAProject status=SKIP method=QALegendProjectsTest.editAProject()[pri:0, instance...)</span>
+                <span class="method-start">20833 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
-                <span class="method-name">addANewPayment</span>
-                <span class="method-start">1414202 ms</span>
+                <span class="method-name">editAProject</span>
+                <span class="method-start">24877 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">afterMethod([TestResult name=addANewPayment status=SKIP method=QALegendInvoicesTest.addANewPayment()[pri:0, inst...)</span>
-                <span class="method-start">1426397 ms</span>
+                <span class="method-name">afterMethod([TestResult name=editAProject status=SKIP method=QALegendProjectsTest.editAProject()[pri:0, instance...)</span>
+                <span class="method-start">30770 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">initialisation(Edge)</span>
-                <span class="method-start">1426399 ms</span>
+                <span class="method-start">30772 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">editAProject</span>
+                <span class="method-start">34620 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=editAProject status=SKIP method=QALegendProjectsTest.editAProject()[pri:0, instance...)</span>
+                <span class="method-start">40532 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialisation(Edge)</span>
+                <span class="method-start">40533 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">addANewPayment</span>
-                <span class="method-start">1430654 ms</span>
+                <span class="method-name">editAProject</span>
+                <span class="method-start">44431 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">afterMethod([TestResult name=addANewPayment status=FAILURE method=QALegendInvoicesTest.addANewPayment()[pri:0, i...)</span>
-                <span class="method-start">1491473 ms</span>
+                <span class="method-name">afterMethod([TestResult name=editAProject status=FAILURE method=QALegendProjectsTest.editAProject()[pri:0, insta...)</span>
+                <span class="method-start">49766 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

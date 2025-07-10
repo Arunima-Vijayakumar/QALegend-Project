@@ -9,12 +9,12 @@
   <test thread-count="5" name="Test">
   <parameter name="Browser" value="Edge"></parameter>
     <classes>
-      <class name="TestScripts.QALegendInvoicesTest"> 
+      <class name="TestScripts.QALegendProjectsTest"> 
      
       <methods>
  <!--  <include name= "addClient"></include>-->
 <!-- <include name= "addANewProject"></include>-->
-      <include name= "addANewPayment"></include>
+      <include name= "editAProject"></include>
       <!-- <include name= "searchProject"></include>-->
       </methods>
       

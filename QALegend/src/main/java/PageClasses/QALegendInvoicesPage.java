@@ -75,6 +75,7 @@ public void addPayment(String amountforPayment) {
 	PageUtilities.clickOnAnElement(paymentDateButton);
 	WaitUtility.waitForElementToBeVisible(driver, todaysDate);
 	PageUtilities.clickOnAnElement(todaysDate);
+	PageUtilities.enterKeyPress(driver);
 	PageUtilities.enterText(amountTextBox, amountforPayment);
 	PageUtilities.clickOnAnElement(saveButton);
 }
