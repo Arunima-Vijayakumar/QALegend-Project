@@ -14,7 +14,7 @@
       <methods>
  <!--  <include name= "addClient"></include>-->
 <!-- <include name= "addANewProject"></include>-->
-      <include name= "editAProject"></include>
+      <include name= "addANewProject"></include>
       <!-- <include name= "searchProject"></include>-->
       </methods>
       
