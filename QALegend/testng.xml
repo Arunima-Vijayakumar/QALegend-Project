@@ -12,10 +12,11 @@
       <class name="TestScripts.QALegendProjectsTest"> 
      
       <methods>
- <!--  <include name= "addClient"></include>-->
-<!-- <include name= "addANewProject"></include>-->
-      <include name= "addANewProject"></include>
-      <!-- <include name= "searchProject"></include>-->
+  <!--<include name= "addClient"></include>-->
+ <!--<include name= "addANewProject"></include>-->
+     <!-- <include name= "addANewProject"></include>-->
+      
+       <include name= "searchAProject"></include>
       </methods>
       
       </class>

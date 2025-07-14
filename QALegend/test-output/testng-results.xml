@@ -2,12 +2,12 @@
 <testng-results retried="4" ignored="3" total="8" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-06T22:18:57 EDT" name="Suite" finished-at="2025-07-06T22:19:47 EDT" duration-ms="50030">
+  <suite started-at="2025-07-10T18:20:59 EDT" name="Suite" finished-at="2025-07-10T18:22:06 EDT" duration-ms="67493">
     <groups>
     </groups>
-    <test started-at="2025-07-06T22:18:57 EDT" name="Test" finished-at="2025-07-06T22:19:47 EDT" duration-ms="50030">
+    <test started-at="2025-07-10T18:20:59 EDT" name="Test" finished-at="2025-07-10T18:22:06 EDT" duration-ms="67493">
       <class name="TestScripts.QALegendProjectsTest">
-        <test-method is-config="true" signature="initialisation(java.lang.String)[pri:0, instance:TestScripts.QALegendProjectsTest@2f67a4d3]" started-at="2025-07-06T22:18:57 EDT" name="initialisation" finished-at="2025-07-06T22:19:02 EDT" duration-ms="5144" status="PASS">
+        <test-method is-config="true" signature="initialisation(java.lang.String)[pri:0, instance:TestScripts.QALegendProjectsTest@2f67a4d3]" started-at="2025-07-10T18:20:59 EDT" name="initialisation" finished-at="2025-07-10T18:21:05 EDT" duration-ms="6615" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,7 +18,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialisation -->
-        <test-method retried="true" signature="editAProject()[pri:0, instance:TestScripts.QALegendProjectsTest@2f67a4d3]" started-at="2025-07-06T22:19:02 EDT" name="editAProject" finished-at="2025-07-06T22:19:08 EDT" duration-ms="5902" status="SKIP">
+        <test-method retried="true" signature="searchAProject()[pri:0, instance:TestScripts.QALegendProjectsTest@2f67a4d3]" started-at="2025-07-10T18:21:05 EDT" name="searchAProject" finished-at="2025-07-10T18:21:14 EDT" duration-ms="8670" status="SKIP">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#title"}
@@ -27,9 +27,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.32.0', revision: 'd17c8aa950'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
 Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [dad1914da98a55ff813baf190e3562d1, findElement {value=title, using=id}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 138.0.3351.65, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:52738}, msedge: {msedgedriverVersion: 138.0.3351.65 (81e3782c3ab4..., userDataDir: C:\Users\Ammu\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52738/devtoo..., se:cdpVersion: 138.0.3351.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: dad1914da98a55ff813baf190e3562d1]]>
+Command: [78a4a895b3394a6a8028e3d9d52023d9, findElement {using=id, value=title}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 138.0.3351.65, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:54956}, msedge: {msedgedriverVersion: 138.0.3351.77 (efaf6935b436..., userDataDir: C:\Users\Ammu\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54956/devtoo..., se:cdpVersion: 138.0.3351.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 78a4a895b3394a6a8028e3d9d52023d9]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#title"}
@@ -38,9 +38,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.32.0', revision: 'd17c8aa950'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
 Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [dad1914da98a55ff813baf190e3562d1, findElement {value=title, using=id}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 138.0.3351.65, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:52738}, msedge: {msedgedriverVersion: 138.0.3351.65 (81e3782c3ab4..., userDataDir: C:\Users\Ammu\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52738/devtoo..., se:cdpVersion: 138.0.3351.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: dad1914da98a55ff813baf190e3562d1
+Command: [78a4a895b3394a6a8028e3d9d52023d9, findElement {using=id, value=title}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 138.0.3351.65, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:54956}, msedge: {msedgedriverVersion: 138.0.3351.77 (efaf6935b436..., userDataDir: C:\Users\Ammu\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54956/devtoo..., se:cdpVersion: 138.0.3351.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 78a4a895b3394a6a8028e3d9d52023d9
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -57,10 +57,10 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:3
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy15.sendKeys(Unknown Source)
-at Utilities.PageUtilities.enterText(PageUtilities.java:17)
-at PageClasses.QALegendProjectPage.editProject(QALegendProjectPage.java:94)
-at TestScripts.QALegendProjectsTest.editAProject(QALegendProjectsTest.java:21)
+at jdk.proxy2/jdk.proxy2.$Proxy15.getAttribute(Unknown Source)
+at Utilities.PageUtilities.getAttribute(PageUtilities.java:61)
+at PageClasses.QALegendProjectPage.getProName(QALegendProjectPage.java:110)
+at TestScripts.QALegendProjectsTest.searchAProject(QALegendProjectsTest.java:49)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -92,19 +92,19 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- editAProject -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestScripts.QALegendProjectsTest@2f67a4d3]" started-at="2025-07-06T22:19:08 EDT" name="afterMethod" finished-at="2025-07-06T22:19:08 EDT" duration-ms="5" status="PASS">
+        </test-method> <!-- searchAProject -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestScripts.QALegendProjectsTest@2f67a4d3]" started-at="2025-07-10T18:21:14 EDT" name="afterMethod" finished-at="2025-07-10T18:21:14 EDT" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=editAProject status=SKIP method=QALegendProjectsTest.editAProject()[pri:0, instance:TestScripts.QALegendProjectsTest@2f67a4d3] output={null}]]]>
+                <![CDATA[[TestResult name=searchAProject status=SKIP method=QALegendProjectsTest.searchAProject()[pri:0, instance:TestScripts.QALegendProjectsTest@2f67a4d3] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="initialisation(java.lang.String)[pri:0, instance:TestScripts.QALegendProjectsTest@2f67a4d3]" started-at="2025-07-06T22:19:08 EDT" name="initialisation" finished-at="2025-07-06T22:19:12 EDT" duration-ms="3899" status="PASS">
+        <test-method is-config="true" signature="initialisation(java.lang.String)[pri:0, instance:TestScripts.QALegendProjectsTest@2f67a4d3]" started-at="2025-07-10T18:21:14 EDT" name="initialisation" finished-at="2025-07-10T18:21:19 EDT" duration-ms="4805" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -115,7 +115,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialisation -->
-        <test-method retried="true" signature="editAProject()[pri:0, instance:TestScripts.QALegendProjectsTest@2f67a4d3]" started-at="2025-07-06T22:19:12 EDT" name="editAProject" finished-at="2025-07-06T22:19:18 EDT" duration-ms="5844" status="SKIP">
+        <test-method retried="true" signature="searchAProject()[pri:0, instance:TestScripts.QALegendProjectsTest@2f67a4d3]" started-at="2025-07-10T18:21:19 EDT" name="searchAProject" finished-at="2025-07-10T18:21:27 EDT" duration-ms="8598" status="SKIP">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#title"}
@@ -124,9 +124,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.32.0', revision: 'd17c8aa950'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
 Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [451caa6e6312c9d7215b7403b3ec31d0, findElement {value=title, using=id}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 138.0.3351.65, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:52778}, msedge: {msedgedriverVersion: 138.0.3351.65 (81e3782c3ab4..., userDataDir: C:\Users\Ammu\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52778/devtoo..., se:cdpVersion: 138.0.3351.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 451caa6e6312c9d7215b7403b3ec31d0]]>
+Command: [060c8ca077f154a864b796320de5026a, findElement {using=id, value=title}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 138.0.3351.65, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:54990}, msedge: {msedgedriverVersion: 138.0.3351.77 (efaf6935b436..., userDataDir: C:\Users\Ammu\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54990/devtoo..., se:cdpVersion: 138.0.3351.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 060c8ca077f154a864b796320de5026a]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#title"}
@@ -135,9 +135,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.32.0', revision: 'd17c8aa950'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
 Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [451caa6e6312c9d7215b7403b3ec31d0, findElement {value=title, using=id}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 138.0.3351.65, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:52778}, msedge: {msedgedriverVersion: 138.0.3351.65 (81e3782c3ab4..., userDataDir: C:\Users\Ammu\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52778/devtoo..., se:cdpVersion: 138.0.3351.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 451caa6e6312c9d7215b7403b3ec31d0
+Command: [060c8ca077f154a864b796320de5026a, findElement {using=id, value=title}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 138.0.3351.65, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:54990}, msedge: {msedgedriverVersion: 138.0.3351.77 (efaf6935b436..., userDataDir: C:\Users\Ammu\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54990/devtoo..., se:cdpVersion: 138.0.3351.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 060c8ca077f154a864b796320de5026a
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -154,10 +154,10 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:3
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy15.sendKeys(Unknown Source)
-at Utilities.PageUtilities.enterText(PageUtilities.java:17)
-at PageClasses.QALegendProjectPage.editProject(QALegendProjectPage.java:94)
-at TestScripts.QALegendProjectsTest.editAProject(QALegendProjectsTest.java:21)
+at jdk.proxy2/jdk.proxy2.$Proxy15.getAttribute(Unknown Source)
+at Utilities.PageUtilities.getAttribute(PageUtilities.java:61)
+at PageClasses.QALegendProjectPage.getProName(QALegendProjectPage.java:110)
+at TestScripts.QALegendProjectsTest.searchAProject(QALegendProjectsTest.java:49)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -189,8 +189,19 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- editAProject -->
-        <test-method is-config="true" signature="initialisation(java.lang.String)[pri:0, instance:TestScripts.QALegendProjectsTest@2f67a4d3]" started-at="2025-07-06T22:19:18 EDT" name="initialisation" finished-at="2025-07-06T22:19:22 EDT" duration-ms="4044" status="PASS">
+        </test-method> <!-- searchAProject -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestScripts.QALegendProjectsTest@2f67a4d3]" started-at="2025-07-10T18:21:27 EDT" name="afterMethod" finished-at="2025-07-10T18:21:27 EDT" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=searchAProject status=SKIP method=QALegendProjectsTest.searchAProject()[pri:0, instance:TestScripts.QALegendProjectsTest@2f67a4d3] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="initialisation(java.lang.String)[pri:0, instance:TestScripts.QALegendProjectsTest@2f67a4d3]" started-at="2025-07-10T18:21:27 EDT" name="initialisation" finished-at="2025-07-10T18:21:32 EDT" duration-ms="4484" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -201,18 +212,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialisation -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestScripts.QALegendProjectsTest@2f67a4d3]" started-at="2025-07-06T22:19:18 EDT" name="afterMethod" finished-at="2025-07-06T22:19:18 EDT" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=editAProject status=SKIP method=QALegendProjectsTest.editAProject()[pri:0, instance:TestScripts.QALegendProjectsTest@2f67a4d3] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method retried="true" signature="editAProject()[pri:0, instance:TestScripts.QALegendProjectsTest@2f67a4d3]" started-at="2025-07-06T22:19:22 EDT" name="editAProject" finished-at="2025-07-06T22:19:28 EDT" duration-ms="5889" status="SKIP">
+        <test-method retried="true" signature="searchAProject()[pri:0, instance:TestScripts.QALegendProjectsTest@2f67a4d3]" started-at="2025-07-10T18:21:32 EDT" name="searchAProject" finished-at="2025-07-10T18:21:40 EDT" duration-ms="8137" status="SKIP">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#title"}
@@ -221,9 +221,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.32.0', revision: 'd17c8aa950'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
 Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [dd263957e3c0948fca27e3805ad58ef8, findElement {value=title, using=id}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 138.0.3351.65, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:52817}, msedge: {msedgedriverVersion: 138.0.3351.65 (81e3782c3ab4..., userDataDir: C:\Users\Ammu\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52817/devtoo..., se:cdpVersion: 138.0.3351.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: dd263957e3c0948fca27e3805ad58ef8]]>
+Command: [ca5a6561c1dcee715b3ddda06f233764, findElement {using=id, value=title}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 138.0.3351.65, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:55030}, msedge: {msedgedriverVersion: 138.0.3351.77 (efaf6935b436..., userDataDir: C:\Users\Ammu\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55030/devtoo..., se:cdpVersion: 138.0.3351.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ca5a6561c1dcee715b3ddda06f233764]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#title"}
@@ -232,9 +232,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.32.0', revision: 'd17c8aa950'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
 Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [dd263957e3c0948fca27e3805ad58ef8, findElement {value=title, using=id}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 138.0.3351.65, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:52817}, msedge: {msedgedriverVersion: 138.0.3351.65 (81e3782c3ab4..., userDataDir: C:\Users\Ammu\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52817/devtoo..., se:cdpVersion: 138.0.3351.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: dd263957e3c0948fca27e3805ad58ef8
+Command: [ca5a6561c1dcee715b3ddda06f233764, findElement {using=id, value=title}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 138.0.3351.65, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:55030}, msedge: {msedgedriverVersion: 138.0.3351.77 (efaf6935b436..., userDataDir: C:\Users\Ammu\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55030/devtoo..., se:cdpVersion: 138.0.3351.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ca5a6561c1dcee715b3ddda06f233764
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -251,10 +251,10 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:3
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy15.sendKeys(Unknown Source)
-at Utilities.PageUtilities.enterText(PageUtilities.java:17)
-at PageClasses.QALegendProjectPage.editProject(QALegendProjectPage.java:94)
-at TestScripts.QALegendProjectsTest.editAProject(QALegendProjectsTest.java:21)
+at jdk.proxy2/jdk.proxy2.$Proxy15.getAttribute(Unknown Source)
+at Utilities.PageUtilities.getAttribute(PageUtilities.java:61)
+at PageClasses.QALegendProjectPage.getProName(QALegendProjectPage.java:110)
+at TestScripts.QALegendProjectsTest.searchAProject(QALegendProjectsTest.java:49)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -286,19 +286,19 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- editAProject -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestScripts.QALegendProjectsTest@2f67a4d3]" started-at="2025-07-06T22:19:28 EDT" name="afterMethod" finished-at="2025-07-06T22:19:28 EDT" duration-ms="0" status="PASS">
+        </test-method> <!-- searchAProject -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestScripts.QALegendProjectsTest@2f67a4d3]" started-at="2025-07-10T18:21:40 EDT" name="afterMethod" finished-at="2025-07-10T18:21:40 EDT" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=editAProject status=SKIP method=QALegendProjectsTest.editAProject()[pri:0, instance:TestScripts.QALegendProjectsTest@2f67a4d3] output={null}]]]>
+                <![CDATA[[TestResult name=searchAProject status=SKIP method=QALegendProjectsTest.searchAProject()[pri:0, instance:TestScripts.QALegendProjectsTest@2f67a4d3] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="initialisation(java.lang.String)[pri:0, instance:TestScripts.QALegendProjectsTest@2f67a4d3]" started-at="2025-07-06T22:19:28 EDT" name="initialisation" finished-at="2025-07-06T22:19:31 EDT" duration-ms="3847" status="PASS">
+        <test-method is-config="true" signature="initialisation(java.lang.String)[pri:0, instance:TestScripts.QALegendProjectsTest@2f67a4d3]" started-at="2025-07-10T18:21:40 EDT" name="initialisation" finished-at="2025-07-10T18:21:45 EDT" duration-ms="4731" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -309,7 +309,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialisation -->
-        <test-method retried="true" signature="editAProject()[pri:0, instance:TestScripts.QALegendProjectsTest@2f67a4d3]" started-at="2025-07-06T22:19:31 EDT" name="editAProject" finished-at="2025-07-06T22:19:37 EDT" duration-ms="5897" status="SKIP">
+        <test-method retried="true" signature="searchAProject()[pri:0, instance:TestScripts.QALegendProjectsTest@2f67a4d3]" started-at="2025-07-10T18:21:45 EDT" name="searchAProject" finished-at="2025-07-10T18:21:53 EDT" duration-ms="8371" status="SKIP">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#title"}
@@ -318,9 +318,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.32.0', revision: 'd17c8aa950'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
 Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [495600f6948fa6ff73eb0a69b575ab50, findElement {value=title, using=id}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 138.0.3351.65, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:52848}, msedge: {msedgedriverVersion: 138.0.3351.65 (81e3782c3ab4..., userDataDir: C:\Users\Ammu\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52848/devtoo..., se:cdpVersion: 138.0.3351.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 495600f6948fa6ff73eb0a69b575ab50]]>
+Command: [b60e80365bde215aba6f93ceb90c0f05, findElement {using=id, value=title}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 138.0.3351.65, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:55067}, msedge: {msedgedriverVersion: 138.0.3351.77 (efaf6935b436..., userDataDir: C:\Users\Ammu\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55067/devtoo..., se:cdpVersion: 138.0.3351.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b60e80365bde215aba6f93ceb90c0f05]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#title"}
@@ -329,9 +329,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.32.0', revision: 'd17c8aa950'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
 Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [495600f6948fa6ff73eb0a69b575ab50, findElement {value=title, using=id}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 138.0.3351.65, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:52848}, msedge: {msedgedriverVersion: 138.0.3351.65 (81e3782c3ab4..., userDataDir: C:\Users\Ammu\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52848/devtoo..., se:cdpVersion: 138.0.3351.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 495600f6948fa6ff73eb0a69b575ab50
+Command: [b60e80365bde215aba6f93ceb90c0f05, findElement {using=id, value=title}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 138.0.3351.65, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:55067}, msedge: {msedgedriverVersion: 138.0.3351.77 (efaf6935b436..., userDataDir: C:\Users\Ammu\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55067/devtoo..., se:cdpVersion: 138.0.3351.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b60e80365bde215aba6f93ceb90c0f05
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -348,10 +348,10 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:3
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy15.sendKeys(Unknown Source)
-at Utilities.PageUtilities.enterText(PageUtilities.java:17)
-at PageClasses.QALegendProjectPage.editProject(QALegendProjectPage.java:94)
-at TestScripts.QALegendProjectsTest.editAProject(QALegendProjectsTest.java:21)
+at jdk.proxy2/jdk.proxy2.$Proxy15.getAttribute(Unknown Source)
+at Utilities.PageUtilities.getAttribute(PageUtilities.java:61)
+at PageClasses.QALegendProjectPage.getProName(QALegendProjectPage.java:110)
+at TestScripts.QALegendProjectsTest.searchAProject(QALegendProjectsTest.java:49)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -383,19 +383,19 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- editAProject -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestScripts.QALegendProjectsTest@2f67a4d3]" started-at="2025-07-06T22:19:37 EDT" name="afterMethod" finished-at="2025-07-06T22:19:37 EDT" duration-ms="1" status="PASS">
+        </test-method> <!-- searchAProject -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestScripts.QALegendProjectsTest@2f67a4d3]" started-at="2025-07-10T18:21:53 EDT" name="afterMethod" finished-at="2025-07-10T18:21:53 EDT" duration-ms="14" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=editAProject status=SKIP method=QALegendProjectsTest.editAProject()[pri:0, instance:TestScripts.QALegendProjectsTest@2f67a4d3] output={null}]]]>
+                <![CDATA[[TestResult name=searchAProject status=SKIP method=QALegendProjectsTest.searchAProject()[pri:0, instance:TestScripts.QALegendProjectsTest@2f67a4d3] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="initialisation(java.lang.String)[pri:0, instance:TestScripts.QALegendProjectsTest@2f67a4d3]" started-at="2025-07-06T22:19:37 EDT" name="initialisation" finished-at="2025-07-06T22:19:41 EDT" duration-ms="3898" status="PASS">
+        <test-method is-config="true" signature="initialisation(java.lang.String)[pri:0, instance:TestScripts.QALegendProjectsTest@2f67a4d3]" started-at="2025-07-10T18:21:53 EDT" name="initialisation" finished-at="2025-07-10T18:21:58 EDT" duration-ms="4513" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -406,7 +406,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialisation -->
-        <test-method signature="editAProject()[pri:0, instance:TestScripts.QALegendProjectsTest@2f67a4d3]" started-at="2025-07-06T22:19:41 EDT" name="editAProject" finished-at="2025-07-06T22:19:47 EDT" duration-ms="5324" status="FAIL">
+        <test-method signature="searchAProject()[pri:0, instance:TestScripts.QALegendProjectsTest@2f67a4d3]" started-at="2025-07-10T18:21:58 EDT" name="searchAProject" finished-at="2025-07-10T18:22:06 EDT" duration-ms="8119" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#title"}
@@ -415,9 +415,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.32.0', revision: 'd17c8aa950'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
 Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [0c1b451d5ef68e772d9e6d8aaed955c4, findElement {value=title, using=id}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 138.0.3351.65, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:52881}, msedge: {msedgedriverVersion: 138.0.3351.65 (81e3782c3ab4..., userDataDir: C:\Users\Ammu\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52881/devtoo..., se:cdpVersion: 138.0.3351.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 0c1b451d5ef68e772d9e6d8aaed955c4]]>
+Command: [2338744988a7fd3f27b8e388b05f85f4, findElement {using=id, value=title}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 138.0.3351.65, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:55110}, msedge: {msedgedriverVersion: 138.0.3351.77 (efaf6935b436..., userDataDir: C:\Users\Ammu\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55110/devtoo..., se:cdpVersion: 138.0.3351.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2338744988a7fd3f27b8e388b05f85f4]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#title"}
@@ -426,9 +426,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.32.0', revision: 'd17c8aa950'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
 Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [0c1b451d5ef68e772d9e6d8aaed955c4, findElement {value=title, using=id}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 138.0.3351.65, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:52881}, msedge: {msedgedriverVersion: 138.0.3351.65 (81e3782c3ab4..., userDataDir: C:\Users\Ammu\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52881/devtoo..., se:cdpVersion: 138.0.3351.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 0c1b451d5ef68e772d9e6d8aaed955c4
+Command: [2338744988a7fd3f27b8e388b05f85f4, findElement {using=id, value=title}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 138.0.3351.65, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:55110}, msedge: {msedgedriverVersion: 138.0.3351.77 (efaf6935b436..., userDataDir: C:\Users\Ammu\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55110/devtoo..., se:cdpVersion: 138.0.3351.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2338744988a7fd3f27b8e388b05f85f4
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -445,10 +445,10 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:3
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy15.sendKeys(Unknown Source)
-at Utilities.PageUtilities.enterText(PageUtilities.java:17)
-at PageClasses.QALegendProjectPage.editProject(QALegendProjectPage.java:94)
-at TestScripts.QALegendProjectsTest.editAProject(QALegendProjectsTest.java:21)
+at jdk.proxy2/jdk.proxy2.$Proxy15.getAttribute(Unknown Source)
+at Utilities.PageUtilities.getAttribute(PageUtilities.java:61)
+at PageClasses.QALegendProjectPage.getProName(QALegendProjectPage.java:110)
+at TestScripts.QALegendProjectsTest.searchAProject(QALegendProjectsTest.java:49)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -480,12 +480,12 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- editAProject -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestScripts.QALegendProjectsTest@2f67a4d3]" started-at="2025-07-06T22:19:47 EDT" name="afterMethod" finished-at="2025-07-06T22:19:47 EDT" duration-ms="212" status="PASS">
+        </test-method> <!-- searchAProject -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestScripts.QALegendProjectsTest@2f67a4d3]" started-at="2025-07-10T18:22:06 EDT" name="afterMethod" finished-at="2025-07-10T18:22:06 EDT" duration-ms="278" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=editAProject status=FAILURE method=QALegendProjectsTest.editAProject()[pri:0, instance:TestScripts.QALegendProjectsTest@2f67a4d3] output={null}]]]>
+                <![CDATA[[TestResult name=searchAProject status=FAILURE method=QALegendProjectsTest.searchAProject()[pri:0, instance:TestScripts.QALegendProjectsTest@2f67a4d3] output={null}]]]>
               </value>
             </param>
           </params>

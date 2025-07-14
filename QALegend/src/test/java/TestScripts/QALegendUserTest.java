@@ -52,6 +52,8 @@ public class QALegendUserTest extends BaseClass{
 		dashboard.clickOnClientOptionButton();
 		clientPage.deleteACompanyCellValue();
 		
+			
+		
 	}
 	
 	

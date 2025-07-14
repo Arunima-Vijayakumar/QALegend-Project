@@ -11,7 +11,7 @@
         <methods>
           <include name="initialisation"/>
           <include name="afterMethod"/>
-          <include name="editAProject"/>
+          <include name="searchAProject"/>
         </methods>
       </class> <!-- TestScripts.QALegendProjectsTest -->
     </classes>

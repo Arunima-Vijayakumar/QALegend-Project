@@ -60,6 +60,11 @@ WebElement searchedItem;
 @FindBy(id="confirmDeleteButton")
 WebElement confirmDelButton;
 
+@FindBy(xpath="(//a[text()='ESPNBet'])[1]")
+WebElement searchedProName;
+
+@FindBy(xpath="//div[@class='page-title clearfix'] //child::h1")
+WebElement titleBlock;
 
 	public QALegendProjectPage(WebDriver driver) {
 		this.driver= driver;
@@ -97,7 +102,16 @@ public void clickonAllProjectsButton() {
 		PageUtilities.enterText(searchButtonProjectPage, projectName);
 		
 	}
+	public void clickOnSearchedPorject() {
+		PageUtilities.clickOnAnElement(searchedProName);
+	}
 	
+	public String getProName() {
+		String name= PageUtilities.getAttribute(titleEditBox, "name");
+		return name;
+		
+		
+	}
 	public void editProject(String newTitle) {
 		PageUtilities.enterText(titleEditBox, newTitle);
 		PageUtilities.clickOnAnElement(statusDropDown);

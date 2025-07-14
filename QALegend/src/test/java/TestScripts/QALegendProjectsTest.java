@@ -12,16 +12,17 @@ import Constants.Constant;
 import Utilities.ExcelUtility;
 import Utilities.RetryAnalyzer;
 import Utilities.WaitUtility;
+import net.bytebuddy.description.type.TypeDescription.Generic.LazyProjection;
 
 public class QALegendProjectsTest extends BaseClass{
 	@Test (retryAnalyzer = RetryAnalyzer.class)
 	public void addANewProject() throws IOException {
-		SoftAssert soft= new SoftAssert();
+		//SoftAssert soft= new SoftAssert();
 		loginPage.logInToQALegend(prop.getProperty("username"), prop.getProperty("password"));
 		projectPage.clickOnProjectButton();
 		projectPage.clickonAllProjectsButton();
-		String proName= ExcelUtility.readStringData(1, 0, Constant.PROJECTDATAEXCELFILEPATH, "ProjectName");
-		String description=  ExcelUtility.readStringData(1, 1, Constant.PROJECTDATAEXCELFILEPATH, "ProjectName");
+		String proName= ExcelUtility.readStringData(1, 0, Constant.PROJECTDATAEXCELFILEPATH, "ProjectDetails");
+		String description=  ExcelUtility.readStringData(1, 1, Constant.PROJECTDATAEXCELFILEPATH, "ProjectDetails");
 		projectPage.addProject(proName, 7, description);
 		
 	}
@@ -44,6 +45,8 @@ public class QALegendProjectsTest extends BaseClass{
 		projectPage.clickonAllProjectsButton();
 		String searchtitle= prop.getProperty("searchtitle");
 		projectPage.searchProject(searchtitle);
+		projectPage.clickOnSearchedPorject();
+		System.out.println(projectPage.getProName());
 		
 	}
 	
