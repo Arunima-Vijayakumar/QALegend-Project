@@ -33,6 +33,7 @@ public class QALegendProjectsTest extends BaseClass{
 		soft.assertAll();
 	}
 	
+	
 	@Test (retryAnalyzer = RetryAnalyzer.class)
 	public void editAProject() throws IOException {
 		SoftAssert soft= new SoftAssert();
