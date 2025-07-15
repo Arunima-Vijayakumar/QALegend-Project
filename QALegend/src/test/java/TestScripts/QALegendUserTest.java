@@ -26,7 +26,7 @@ public class QALegendUserTest extends BaseClass{
 		String companyName= ExcelUtility.readStringData(1, 0, Constant.CLIENTDATAEXCELFILEPATH, "ClientDetails")+ FakerUtility.getRandomNumber();
 		clientPage.createClient(companyName, FakerUtility.getFakerAddress(), ExcelUtility.readIntegerData (1, 1, Constant.CLIENTDATAEXCELFILEPATH, "ClientDetails"));
 		clientPage.searchClient(companyName);
-		AssertJUnit.assertEquals(clientPage.getCompanyCellValue(), companyName);
+		Assert.assertEquals(clientPage.getCompanyCellValue(), companyName);
 	}
 	
 	@Test (retryAnalyzer = RetryAnalyzer.class)
@@ -37,7 +37,6 @@ public class QALegendUserTest extends BaseClass{
 		String companyName= "Stride"+ FakerUtility.getRandomNumber(); //to generate company names with suffix 1, 1000, or any random number
 		clientPage.createClient(companyName, FakerUtility.getFakerAddress(), "6478041794");
 		clientPage.searchClient(companyName);	
-		
 		soft.assertEquals(companyName, companyName);
 		soft.assertAll();
 		//Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
@@ -50,10 +49,12 @@ public class QALegendUserTest extends BaseClass{
 	public void deleteClient() {
 		loginPage.logInToQALegend(prop.getProperty("username"), prop.getProperty("password"));
 		dashboard.clickOnClientOptionButton();
+		String companyName= "Stride"+ FakerUtility.getRandomNumber(); //to generate company names with suffix 1, 1000, or any random number
+		clientPage.createClient(companyName, FakerUtility.getFakerAddress(), "6478041794");
+		clientPage.searchClient(companyName);	
 		clientPage.deleteACompanyCellValue();
-		
-			
-		
+		clientPage.searchClient(companyName);
+		Assert.assertEquals(clientPage.getTextFromDelete(), "No record found.");
 	}
 	
 	

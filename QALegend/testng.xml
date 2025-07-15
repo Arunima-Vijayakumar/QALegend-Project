@@ -9,14 +9,14 @@
   <test thread-count="5" name="Test">
   <parameter name="Browser" value="Edge"></parameter>
     <classes>
-      <class name="TestScripts.QALegendProjectsTest"> 
+      <class name="TestScripts.QALegendUserTest"> 
      
       <methods>
   <!--<include name= "addClient"></include>-->
  <!--<include name= "addANewProject"></include>-->
      <!-- <include name= "addANewProject"></include>-->
       
-       <include name= "searchAProject"></include>
+       <include name= "deleteClient"></include>
       </methods>
       
       </class>

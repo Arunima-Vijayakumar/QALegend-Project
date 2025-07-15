@@ -45,7 +45,7 @@ WebElement deadLineDropDownButton;
 @FindBy(xpath="//button[@class='btn btn-default dropdown-toggle ']")
 WebElement statusDropDownButton;
 
-@FindBy(xpath="(//a[@class='delete'])[3]")
+@FindBy(xpath="(//a[@class='delete'])[1]")
 WebElement deleteProject;
 
 @FindBy(xpath="(//a[@class='edit'])[3]")
@@ -60,11 +60,20 @@ WebElement searchedItem;
 @FindBy(id="confirmDeleteButton")
 WebElement confirmDelButton;
 
-@FindBy(xpath="(//a[text()='ESPNBet'])[1]")
+@FindBy(xpath="//a[text()='ESPNBet1']")
 WebElement searchedProName;
 
 @FindBy(xpath="//div[@class='page-title clearfix'] //child::h1")
 WebElement titleBlock;
+
+@FindBy(xpath="//h4[text()='Add project']")
+WebElement addprojecttitle;
+
+@FindBy(xpath="//h4[text()='Edit project']")
+WebElement editProjectsTitle;
+
+@FindBy(xpath="//td[text()='No record found.']")
+WebElement norecordfound;
 
 	public QALegendProjectPage(WebDriver driver) {
 		this.driver= driver;
@@ -80,8 +89,17 @@ public void clickOnProjectButton() {
 }
 public void clickonAllProjectsButton() {
 	PageUtilities.clickOnAnElement(allProjectsButton);
+	
 }
-
+public String getAllprojectsTitle() {
+	return	PageUtilities.getTextFromAnElement(titleBlock);
+}
+public String getEditprojectsTitle() {
+	return	PageUtilities.getTextFromAnElement(editProjectsTitle);
+}
+public String getTextFromDelete() {
+	return	PageUtilities.getTextFromAnElement(norecordfound);
+}
 	public void addProject(String title, int index, String description) {
 	
 	
@@ -107,7 +125,7 @@ public void clickonAllProjectsButton() {
 	}
 	
 	public String getProName() {
-		String name= PageUtilities.getAttribute(titleEditBox, "name");
+		String name= PageUtilities.getTextFromAnElement(searchedProName);
 		return name;
 		
 		

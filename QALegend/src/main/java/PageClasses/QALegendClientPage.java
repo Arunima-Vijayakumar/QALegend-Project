@@ -37,6 +37,8 @@ WebElement deleteButton1;
 @FindBy (id= "confirmDeleteButton")
 WebElement confirmDeleteButton;
 
+@FindBy(xpath="//td[text()='No record found.']")
+WebElement noRecordsFound;
 
 
 
@@ -60,6 +62,7 @@ public QALegendClientPage createClient(String companyName, String address, Strin
 
 public void searchClient(String clientName) {
 	WaitUtility.waitForElementToBeInVisible(driver, saveButton);
+	PageUtilities.clearText(searchButton);
 	PageUtilities.enterText(searchButton, clientName);
 }
 
@@ -91,7 +94,8 @@ public String getCountryCellValue() {
 public void deleteACompanyCellValue() {
 	PageUtilities.clickOnAnElement(deleteButton1);
 	PageUtilities.clickOnAnElement(confirmDeleteButton);
-	
 }
-
+public String getTextFromDelete() {
+	return	PageUtilities.getTextFromAnElement(noRecordsFound);
+}
 }
