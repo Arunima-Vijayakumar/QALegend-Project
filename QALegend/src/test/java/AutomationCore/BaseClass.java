@@ -54,7 +54,7 @@ public class BaseClass {
 		return driver;
 	}
 
-@BeforeMethod 
+@BeforeMethod (groups= {"regression","smoke"})
 @Parameters("Browser")
 public void initialisation  (String browserName) throws Exception {
 	System.out.println("before method");
@@ -75,14 +75,14 @@ public void initialisation  (String browserName) throws Exception {
 	driver.manage().window().maximize();
 }
 
-@AfterMethod
+@AfterMethod (groups= {"regression", "smoke"})
 public void afterMethod(ITestResult itresult) throws IOException{ //screenshot
 	if (itresult.getStatus() == ITestResult.FAILURE) {
 		ScreenShotUtility ss = new ScreenShotUtility();
 		ss.captureFailureScreenShot(driver, itresult.getName());
 	}
 	if (driver!=null) {
-		//driver.quit();
+		driver.quit();
 	}
 }
 }

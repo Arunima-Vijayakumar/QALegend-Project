@@ -48,7 +48,7 @@ WebElement statusDropDownButton;
 @FindBy(xpath="(//a[@class='delete'])[1]")
 WebElement deleteProject;
 
-@FindBy(xpath="(//a[@class='edit'])[3]")
+@FindBy(xpath="//a[@class='edit']")
 WebElement editProjectButton;
 
 @FindBy(id="select2-chosen-13")
@@ -60,7 +60,7 @@ WebElement searchedItem;
 @FindBy(id="confirmDeleteButton")
 WebElement confirmDelButton;
 
-@FindBy(xpath="//a[text()='ESPNBet1']")
+@FindBy(xpath="")
 WebElement searchedProName;
 
 @FindBy(xpath="//div[@class='page-title clearfix'] //child::h1")
@@ -69,11 +69,27 @@ WebElement titleBlock;
 @FindBy(xpath="//h4[text()='Add project']")
 WebElement addprojecttitle;
 
-@FindBy(xpath="//h4[text()='Edit project']")
-WebElement editProjectsTitle;
 
 @FindBy(xpath="//td[text()='No record found.']")
 WebElement norecordfound;
+
+@FindBy(xpath="(//tr[@class='odd' or @class='even']//descendant::td)[2]")
+WebElement projectCell;
+
+@FindBy(xpath="//span[text()='Tasks']")
+WebElement tasksButton;
+
+@FindBy(xpath="(//a[@title='Add task'])[2]")
+WebElement addTaskButton;
+
+@FindBy(xpath="//input[@id='title']")
+WebElement titleBox;
+
+@FindBy(id="select2-chosen-14")
+WebElement projectDropDown;
+
+@FindBy(xpath="(//tr[@class='odd' or @class='even']//descendant::a)[2]")
+WebElement taskCell;
 
 	public QALegendProjectPage(WebDriver driver) {
 		this.driver= driver;
@@ -84,9 +100,11 @@ WebElement norecordfound;
 
 
 
-public void clickOnProjectButton() {
+public QALegendProjectPage clickOnProjectButton() {
 	PageUtilities.clickOnAnElement(projectButton);
+	return this;
 }
+
 public void clickonAllProjectsButton() {
 	PageUtilities.clickOnAnElement(allProjectsButton);
 	
@@ -94,9 +112,29 @@ public void clickonAllProjectsButton() {
 public String getAllprojectsTitle() {
 	return	PageUtilities.getTextFromAnElement(titleBlock);
 }
-public String getEditprojectsTitle() {
-	return	PageUtilities.getTextFromAnElement(editProjectsTitle);
+
+public void clickOnTasksButton() {
+	PageUtilities.clickOnAnElement(tasksButton);
 }
+
+public void clickonAddTaskButton() {
+	PageUtilities.clickOnAnElement(addTaskButton);
+	
+}
+public void addingATask(String title) {
+	PageUtilities.enterText(titleBox, title);
+	PageUtilities.clickOnAnElement(projectDropDown);
+	PageUtilities.arrowKeyDown(driver);
+	PageUtilities.arrowKeyDown(driver);
+	PageUtilities.arrowKeyDown(driver);
+	PageUtilities.enterKeyPress(driver);
+	PageUtilities.clickOnAnElement(submitButton);
+	
+}
+public String getTextFromTaskCell() {
+	return	PageUtilities.getTextFromAnElement(taskCell);
+}
+
 public String getTextFromDelete() {
 	return	PageUtilities.getTextFromAnElement(norecordfound);
 }
@@ -116,7 +154,8 @@ public String getTextFromDelete() {
 	}
 	
 	public void searchProject(String projectName) {
-	
+	WaitUtility.waitForElementToBeInVisible(driver, submitButton);
+	PageUtilities.clearText(searchButtonProjectPage);
 		PageUtilities.enterText(searchButtonProjectPage, projectName);
 		
 	}
@@ -127,15 +166,18 @@ public String getTextFromDelete() {
 	public String getProName() {
 		String name= PageUtilities.getTextFromAnElement(searchedProName);
 		return name;
-		
-		
+	}
+	
+	public String getProjectCellValue() {
+		String projectName= PageUtilities.getTextFromAnElement(projectCell);
+		return projectName;
 	}
 	public void editProject(String newTitle) {
+		WaitUtility.waitForElementToBeInVisible(driver, submitButton);
+		PageUtilities.clickOnAnElement(editProjectButton);
+		
+		PageUtilities.clearText(titleEditBox);
 		PageUtilities.enterText(titleEditBox, newTitle);
-		PageUtilities.clickOnAnElement(statusDropDown);
-		PageUtilities.arrowKeyDown(driver);
-		PageUtilities.arrowKeyDown(driver);
-		PageUtilities.enterKeyPress(driver);
 		PageUtilities.clickOnAnElement(submitButton);
 	}
 	
@@ -144,5 +186,9 @@ public String getTextFromDelete() {
 		
 		PageUtilities.clickOnAnElement(deleteProject);
 		PageUtilities.clickOnAnElement(confirmDelButton);
+	}
+	
+	public String getTextDelete() {
+		return	PageUtilities.getTextFromAnElement(norecordfound);
 	}
 }

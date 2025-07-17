@@ -1,5 +1,7 @@
 package TestScripts;
 
+import org.testng.annotations.Test;
+
 import java.io.IOException;
 
 import org.testng.Assert;
@@ -16,69 +18,72 @@ import Utilities.WaitUtility;
 import net.bytebuddy.description.type.TypeDescription.Generic.LazyProjection;
 
 public class QALegendProjectsTest extends BaseClass{
-	@Test (retryAnalyzer = RetryAnalyzer.class)
+	@Test (retryAnalyzer = RetryAnalyzer.class, groups= {"smoke", "regression"})
 	public void addANewProject() throws IOException {
-		SoftAssert soft= new SoftAssert();
+		
 		loginPage.logInToQALegend(prop.getProperty("username"), prop.getProperty("password"));
 		projectPage.clickOnProjectButton();
 		projectPage.clickonAllProjectsButton();
 		String proName= ExcelUtility.readStringData(1, 0, Constant.PROJECTDATAEXCELFILEPATH, "ProjectDetails")+FakerUtility.getRandomNumber();
 		String description=  ExcelUtility.readStringData(1, 1, Constant.PROJECTDATAEXCELFILEPATH, "ProjectDetails");
-		String actual= projectPage.getAllprojectsTitle();
-		String expected=prop.getProperty("expectedTitleforAllprojects");
+		
+		projectPage.addProject(proName, 7, description);
+		
+		projectPage.searchProject(proName);
+		System.out.println(projectPage.getProjectCellValue());
+		Assert.assertEquals(projectPage.getProjectCellValue(), proName);
+		
+		//soft.assertEquals(actual, expected);
+		//soft.assertAll();
+	}
 	
+	
+	@Test (retryAnalyzer = RetryAnalyzer.class, groups= {"regression"})
+	public void editAProject() throws IOException {
+		
+		loginPage.logInToQALegend(prop.getProperty("username"), prop.getProperty("password"));
+		projectPage.clickOnProjectButton();
+		projectPage.clickonAllProjectsButton();
+		String proName= ExcelUtility.readStringData(1, 0, Constant.PROJECTDATAEXCELFILEPATH, "ProjectDetails")+FakerUtility.getRandomNumber();
+		String description=  ExcelUtility.readStringData(1, 1, Constant.PROJECTDATAEXCELFILEPATH, "ProjectDetails");
 		projectPage.addProject(proName, 7, description);
 		projectPage.searchProject(proName);
-		soft.assertEquals(actual, expected);
-		soft.assertAll();
-	}
-	
-	
-	@Test (retryAnalyzer = RetryAnalyzer.class)
-	public void editAProject() throws IOException {
-		SoftAssert soft= new SoftAssert();
-		loginPage.logInToQALegend(prop.getProperty("username"), prop.getProperty("password"));
-		projectPage.clickOnProjectButton();
-		projectPage.clickonAllProjectsButton();
-		String proName= ExcelUtility.readStringData(1, 0, Constant.PROJECTDATAEXCELFILEPATH, "ProjectName")+FakerUtility.getRandomNumber();
-		String description=  ExcelUtility.readStringData(1, 1, Constant.PROJECTDATAEXCELFILEPATH, "ProjectName");
-		projectPage.addProject(proName, 7, description);
 		String newTitle= prop.getProperty("newtitle")+FakerUtility.getRandomNumber();
-		String actual= projectPage.getEditprojectsTitle();
-		String expected= prop.getProperty("expectedTitleforEditproject");
-		soft.assertEquals(actual, expected);
-		soft.assertAll();
+		System.out.println(newTitle);
 		projectPage.editProject(newTitle);
-	}
-	@Test (retryAnalyzer = RetryAnalyzer.class)
-	public void searchAProject() {
-		SoftAssert soft= new SoftAssert();
-		loginPage.logInToQALegend(prop.getProperty("username"), prop.getProperty("password"));
-		projectPage.clickOnProjectButton();
-		projectPage.clickonAllProjectsButton();
-		String searchtitle= prop.getProperty("searchtitle");
-		projectPage.searchProject(searchtitle);
-		String actual= projectPage.getProName();
-		String expected= searchtitle;
-		soft.assertAll();
-		
-		//projectPage.clickOnSearchedPorject();
+		projectPage.searchProject(newTitle);
+		System.out.println(projectPage.getProjectCellValue());
+		Assert.assertEquals(projectPage.getProjectCellValue(), newTitle);
 	}
 	
-	@Test (retryAnalyzer = RetryAnalyzer.class)
-	public void deleteAProject() {
-		SoftAssert soft= new SoftAssert();
+	
+	@Test (retryAnalyzer = RetryAnalyzer.class, groups= {"smoke", "regression"})
+	public void deleteAProject() throws IOException {
+		
 		loginPage.logInToQALegend(prop.getProperty("username"), prop.getProperty("password"));
 		projectPage.clickOnProjectButton();
 		projectPage.clickonAllProjectsButton();
-		String searchtitle= prop.getProperty("searchtitle");
-		projectPage.searchProject(searchtitle);
-		projectPage.deleteProject();
-		projectPage.searchProject(searchtitle);
-		String actual= projectPage.getTextFromDelete();
-		String expected= prop.getProperty("noitemsondelete");
-		soft.assertEquals(actual, expected);
-		soft.assertAll();
 		
+		String proName= ExcelUtility.readStringData(1, 0, Constant.PROJECTDATAEXCELFILEPATH, "ProjectDetails")+FakerUtility.getRandomNumber();
+		String description=  ExcelUtility.readStringData(1, 1, Constant.PROJECTDATAEXCELFILEPATH, "ProjectDetails");
+		
+		projectPage.addProject(proName, 7, description);
+		
+		projectPage.searchProject(proName);
+		
+		
+		projectPage.deleteProject();
+		projectPage.searchProject(proName);
+		Assert.assertEquals(projectPage.getTextDelete(), "No record found.");
+	
+	}
+	@Test (retryAnalyzer = RetryAnalyzer.class, groups= {"smoke", "regression"})
+	public void addANewTask() {
+		loginPage.logInToQALegend(prop.getProperty("username"), prop.getProperty("password"));
+		projectPage.clickOnProjectButton();
+		projectPage.clickOnTasksButton();
+		projectPage.clickonAddTaskButton();
+		projectPage.addingATask(prop.getProperty("tasktitle"));
+		Assert.assertEquals(projectPage.getTextFromTaskCell(), prop.getProperty("tasktitle"));
 	}
 }

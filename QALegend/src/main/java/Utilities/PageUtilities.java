@@ -87,6 +87,11 @@ public class PageUtilities {
 		Actions action = new Actions(driver);
 		action.sendKeys(Keys.ALT).perform();
 	}
+	
+	public static void rightArrowPress(WebDriver driver) {
+		Actions action = new Actions(driver);
+		action.sendKeys(Keys.ARROW_RIGHT).perform();
+	} 
 	public static void rightClick(WebDriver driver, WebElement element) {
 		Actions action = new Actions(driver);
 		action.contextClick(element).build().perform();

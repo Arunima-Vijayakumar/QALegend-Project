@@ -40,7 +40,8 @@ WebElement confirmDeleteButton;
 @FindBy(xpath="//td[text()='No record found.']")
 WebElement noRecordsFound;
 
-
+@FindBy(xpath="//a[@class='edit']")
+WebElement editClientButton;
 
 public QALegendClientPage(WebDriver driver) {
 	// TODO Auto-generated constructor stub
@@ -59,11 +60,19 @@ public QALegendClientPage createClient(String companyName, String address, Strin
 	return this; //chaining of methods
 	
 }
+public QALegendClientPage editClient(String newCompanyName) {
+	PageUtilities.clickOnAnElement(editClientButton);
+	PageUtilities.clearText(companyNameField);
+	PageUtilities.enterText(companyNameField, newCompanyName);
+	PageUtilities.clickOnAnElement(saveButton);
+	return this;
+}
 
-public void searchClient(String clientName) {
+public QALegendClientPage searchClient(String clientName) {
 	WaitUtility.waitForElementToBeInVisible(driver, saveButton);
 	PageUtilities.clearText(searchButton);
 	PageUtilities.enterText(searchButton, clientName);
+	return this;
 }
 
 public String getCompanyCellValue() {

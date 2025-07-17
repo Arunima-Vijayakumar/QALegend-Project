@@ -5,15 +5,15 @@
     <listener class-name="TestScripts.Listeners"/>
   </listeners>
   <test thread-count="5" name="Test(failed)">
-    <parameter name="Browser" value="Edge"/>
+    <parameter name="Browser" value="Chrome"/>
     <classes>
-      <class name="TestScripts.QALegendProjectsTest">
+      <class name="TestScripts.QALegendInvoicesTest">
         <methods>
           <include name="initialisation"/>
+          <include name="addANewPayment"/>
           <include name="afterMethod"/>
-          <include name="searchAProject"/>
         </methods>
-      </class> <!-- TestScripts.QALegendProjectsTest -->
+      </class> <!-- TestScripts.QALegendInvoicesTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

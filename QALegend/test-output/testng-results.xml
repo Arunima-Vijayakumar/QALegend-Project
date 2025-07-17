@@ -2,31 +2,37 @@
 <testng-results ignored="2" total="3" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-14T21:59:06 EDT" name="Suite" finished-at="2025-07-14T21:59:29 EDT" duration-ms="22538">
+  <suite started-at="2025-07-16T22:22:41 EDT" name="Suite" finished-at="2025-07-16T22:23:06 EDT" duration-ms="24763">
     <groups>
+      <group name="regression">
+        <method signature="QALegendUserTest.editClient()[pri:0, instance:TestScripts.QALegendUserTest@7dc3712]" name="editClient" class="TestScripts.QALegendUserTest"/>
+      </group> <!-- regression -->
+      <group name="smoke">
+        <method signature="QALegendUserTest.editClient()[pri:0, instance:TestScripts.QALegendUserTest@7dc3712]" name="editClient" class="TestScripts.QALegendUserTest"/>
+      </group> <!-- smoke -->
     </groups>
-    <test started-at="2025-07-14T21:59:06 EDT" name="Test" finished-at="2025-07-14T21:59:29 EDT" duration-ms="22538">
+    <test started-at="2025-07-16T22:22:41 EDT" name="Test" finished-at="2025-07-16T22:23:06 EDT" duration-ms="24763">
       <class name="TestScripts.QALegendUserTest">
-        <test-method is-config="true" signature="initialisation(java.lang.String)[pri:0, instance:TestScripts.QALegendUserTest@7dc3712]" started-at="2025-07-14T21:59:06 EDT" name="initialisation" finished-at="2025-07-14T21:59:13 EDT" duration-ms="6442" status="PASS">
+        <test-method is-config="true" signature="initialisation(java.lang.String)[pri:0, instance:TestScripts.QALegendUserTest@7dc3712]" started-at="2025-07-16T22:22:41 EDT" name="initialisation" finished-at="2025-07-16T22:22:46 EDT" duration-ms="4826" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Edge]]>
+                <![CDATA[Chrome]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialisation -->
-        <test-method signature="deleteClient()[pri:0, instance:TestScripts.QALegendUserTest@7dc3712]" started-at="2025-07-14T21:59:13 EDT" name="deleteClient" finished-at="2025-07-14T21:59:29 EDT" duration-ms="16026" status="PASS">
+        <test-method signature="editClient()[pri:0, instance:TestScripts.QALegendUserTest@7dc3712]" started-at="2025-07-16T22:22:46 EDT" name="editClient" finished-at="2025-07-16T22:23:06 EDT" duration-ms="19826" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- deleteClient -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestScripts.QALegendUserTest@7dc3712]" started-at="2025-07-14T21:59:29 EDT" name="afterMethod" finished-at="2025-07-14T21:59:29 EDT" duration-ms="0" status="PASS">
+        </test-method> <!-- editClient -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestScripts.QALegendUserTest@7dc3712]" started-at="2025-07-16T22:23:06 EDT" name="afterMethod" finished-at="2025-07-16T22:23:06 EDT" duration-ms="5" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=deleteClient status=SUCCESS method=QALegendUserTest.deleteClient()[pri:0, instance:TestScripts.QALegendUserTest@7dc3712] output={null}]]]>
+                <![CDATA[[TestResult name=editClient status=SUCCESS method=QALegendUserTest.editClient()[pri:0, instance:TestScripts.QALegendUserTest@7dc3712] output={null}]]]>
               </value>
             </param>
           </params>

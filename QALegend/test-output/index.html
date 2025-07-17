@@ -60,7 +60,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="group-Suite" class="navigator-link ">
-                    <span>0 groups</span>
+                    <span>2 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -103,7 +103,7 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="TestScripts.QALegendUserTest" class="method navigator-link" hash-for-method="deleteClient">deleteClient</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="TestScripts.QALegendUserTest" class="method navigator-link" hash-for-method="editClient">editClient</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -126,9 +126,9 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="deleteClient">
-                  </a> <!-- deleteClient -->
-                  <span class="method-name">deleteClient</span>
+                  <a name="editClient">
+                  </a> <!-- editClient -->
+                  <span class="method-name">editClient</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -147,11 +147,11 @@
     &lt;listener class-name=&quot;TestScripts.Listeners&quot;/&gt;
   &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
-    &lt;parameter name=&quot;Browser&quot; value=&quot;Edge&quot;/&gt;
+    &lt;parameter name=&quot;Browser&quot; value=&quot;Chrome&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;TestScripts.QALegendUserTest&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;deleteClient&quot;/&gt;
+          &lt;include name=&quot;editClient&quot;/&gt;
         &lt;/methods&gt;
       &lt;/class&gt; &lt;!-- TestScripts.QALegendUserTest --&gt;
     &lt;/classes&gt;
@@ -177,6 +177,22 @@
             <span class="header-content">Groups for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">regression</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">editClient</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">smoke</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">editClient</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="times-Suite" class="panel">
@@ -195,14 +211,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'deleteClient')
+data.setCell(0, 1, 'editClient')
 data.setCell(0, 2, 'TestScripts.QALegendUserTest')
-data.setCell(0, 3, 16026);
+data.setCell(0, 3, 19826);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 16 seconds</span>
+              <span class="suite-total-time">Total running time: 19 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -225,7 +241,7 @@ return data;
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">addClient</span>
                 <br/>
-                <span class="ignored-method-name">editClient</span>
+                <span class="ignored-method-name">deleteClient</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -239,16 +255,16 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">TestScripts.QALegendUserTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">initialisation(Edge)</span>
+                <span class="method-name">initialisation(Chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">deleteClient</span>
-                <span class="method-start">6442 ms</span>
+                <span class="method-name">editClient</span>
+                <span class="method-start">4827 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">afterMethod([TestResult name=deleteClient status=SUCCESS method=QALegendUserTest.deleteClient()[pri:0, instance:...)</span>
-                <span class="method-start">22477 ms</span>
+                <span class="method-name">afterMethod([TestResult name=editClient status=SUCCESS method=QALegendUserTest.editClient()[pri:0, instance:Test...)</span>
+                <span class="method-start">24686 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Suite">
+	<listeners>
+		<listener class-name="TestScripts.Listeners">   <!--//class-name, and not just name --> 
+
+		</listener>
+	</listeners>
+	<test thread-count="5" name="TestusingChrome">
+		<parameter name="Browser" value="Chrome"></parameter>
+		<classes>
+			<class name="TestScripts.QALegendUserTest">
+				<method>
+					<include name="addClient"> </include>
+					<include name="editClient"> </include>
+					<include name="deleteClient"> </include>
+				</method>
+			</class>
+			<class name="TestScripts.QALegendProjectsTest">
+				<method>
+					<include name="addANewProject"> </include>
+					<include name="editAProject"> </include>
+					<include name="deleteAProject"> </include>
+					<include name="addANewTask"> </include>
+				</method>
+			</class>
+			<class name="TestScripts.QALegendInvoicesTest">
+				<method>
+					<include name="addanewInvoice"> </include>
+					<include name="addANewPayment"> </include>
+					<include name="deleteanInvoice"> </include>
+				</method>
+			</class>
+		</classes>
+	</test> 
+	<test thread-count="5" name="TestusingEdge">
+		<parameter name="Browser" value="Edge"></parameter>
+		<classes>
+			<class name="TestScripts.QALegendUserTest">
+				<method>
+					<include name="addClient"> </include>
+					<include name="editClient"> </include>
+					<include name="deleteClient"> </include>
+				</method>
+			</class>
+			<class name="TestScripts.QALegendProjectsTest">
+				<method>
+					<include name="addANewProject"> </include>
+					<include name="editAProject"> </include>
+					<include name="deleteAProject"> </include>
+					<include name="addANewTask"> </include>
+				</method>
+			</class>
+			<class name="TestScripts.QALegendInvoicesTest">
+				<method>
+					<include name="addanewInvoice"> </include>
+					<include name="addANewPayment"> </include>
+					<include name="deleteanInvoice"> </include>
+				</method>
+			</class>
+		</classes>
+	</test>
+	<test thread-count="5" name="TestusingFirefox">
+		<parameter name="Browser" value="Firefox"></parameter>
+		<classes>
+			<class name="TestScripts.QALegendUserTest">
+				<method>
+					<include name="addClient"> </include>
+					<include name="editClient"> </include>
+					<include name="deleteClient"> </include>
+				</method>
+			</class>
+			<class name="TestScripts.QALegendProjectsTest">
+				<method>
+					<include name="addANewProject"> </include>
+					<include name="editAProject"> </include>
+					<include name="deleteAProject"> </include>
+					<include name="addANewTask"> </include>
+				</method>
+			</class>
+			<class name="TestScripts.QALegendInvoicesTest">
+				<method>
+					<include name="addanewInvoice"> </include>
+					<include name="addANewPayment"> </include>
+					<include name="deleteanInvoice"> </include>
+				</method>
+			</class>
+		</classes>
+	</test>
+</suite> 
